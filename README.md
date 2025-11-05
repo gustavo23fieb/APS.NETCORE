@@ -63,6 +63,8 @@ Nov 2021> .NET6.0 LTS, Nov 2022> .NET 7.0 GA, Nov 2023> .NET 8.0 LTS, Nov 2024> 
 
 # Por que ASP.NET é a melhor plataforma
 
-- Desenvolva aplicações web full stack com HTML, CSS, JS, e C#
-- Desenvolva APIs REST para uma série de consumidores incluindo aplicações mobile
-- Ative a comunicação
+- Desenvolva **aplicações** web **full stack** com HTML, CSS, JS, e C#
+- Desenvolva **APIs REST** para uma série de consumidores incluindo aplicações **mobile**
+- Ative a **comunicação** bidirecional entre cliente e servidor em **tempo real**
+- Desenvolva **microsserviços** totalmente independentes rodando em **containeres**
+- .Net é **multiplataforma**, isso significa que você poderá desenvolver um **único** código e rodar sua aplicações em **qualquer** plataforma inclusive em **imagens** (ex Docker/Kubernetes).
