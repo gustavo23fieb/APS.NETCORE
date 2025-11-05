@@ -39,5 +39,30 @@ dispositivos móveis, desktop, jogos, loT e muito mais.
 - request____> internet____> dados____> Aplicação ASP.NET
 - <________response: retorno de dados como arquivos, HTML, JSON
 
-- # História do ASP.NET
-- 
+ # História do ASP.NET
+ 
+- ASP:ASP Clássico lançado em 1996
+- APS.NET WebForms: Lançado em 2002 junto com .NET Framework
+- ASP.NET MVC: Alternativa ao WebForms em 2009, chegou na versão 5 em 2013
+- ASP.NETCore: Anunciado em 2014 foi disponibilizado na versão 1.0 no final de 2016
+
+# Vesões do ASP.NET 
+
+- Nov 2016> .NET Core 1.1 GA,  mai 2018> .NET Core 2.1 LTS,  dez 2019> .NET Core 3.1 LTS | Nov 2020> .NET 5.0 GA,
+Nov 2021> .NET6.0 LTS, Nov 2022> .NET 7.0 GA, Nov 2023> .NET 8.0 LTS, Nov 2024> .NET 9.0 GA, Nov 2025> .NET 10.0 LTS
+
+- LTS - Long Term Support
+- GA - Genreal Avaliability
+
+# Versionamento
+
+- Semantic Versioning
+- 1: Patch bugfixes, not breaking
+- 2: Major breaking chance
+- 3: Minor New features, Not breaking
+
+# Por que ASP.NET é a melhor plataforma
+
+- Desenvolva aplicações web full stack com HTML, CSS, JS, e C#
+- Desenvolva APIs REST para uma série de consumidores incluindo aplicações mobile
+- Ative a comunicação
