@@ -25,4 +25,10 @@ dispositivos móveis, desktop, jogos, loT e muito mais.
 - O ASP.NET estende a plataforma .NET com ferramentas e bibliotecas específicas para a criação de aplicações Web.
 - Com ASP.NET você será capaz de criar qualquer tipo de aplicação Web, inclusive as de alta complexidade que são utilizadas
  nas maiores empresas do mundo.
--
+
+# Como o ASP.NET está organizado
+
+- O ASP.NET significa o ASP rodando sobre a plataforma .NET
+- Ele é uma extensão
+- RAZOR(sites): tudo que for site está divido da seguinte forma: MVC, Razor Pages, Razor Library, Blazor(SPA)
+- SERVICES:
