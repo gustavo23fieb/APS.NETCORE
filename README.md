@@ -31,4 +31,13 @@ dispositivos móveis, desktop, jogos, loT e muito mais.
 - O ASP.NET significa o ASP rodando sobre a plataforma .NET
 - Ele é uma extensão
 - RAZOR(sites): tudo que for site está divido da seguinte forma: MVC, Razor Pages, Razor Library, Blazor(SPA)
-- SERVICES:
+- SERVICES: Web API, SignalR, gRPC
+- IDENTITY
+
+# Como funciona o ASP.NET
+
+- request____> internet____> dados____> Aplicação ASP.NET
+- <________response: retorno de dados como arquivos, HTML, JSON
+
+- # História do ASP.NET
+- 
