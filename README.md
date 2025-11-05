@@ -68,3 +68,23 @@ Nov 2021> .NET6.0 LTS, Nov 2022> .NET 7.0 GA, Nov 2023> .NET 8.0 LTS, Nov 2024> 
 - Ative a **comunicação** bidirecional entre cliente e servidor em **tempo real**
 - Desenvolva **microsserviços** totalmente independentes rodando em **containeres**
 - .Net é **multiplataforma**, isso significa que você poderá desenvolver um **único** código e rodar sua aplicações em **qualquer** plataforma inclusive em **imagens** (ex Docker/Kubernetes).
+
+# Performace Imbatível
+
+- O ASP.NET é a plataforma web mais **rápida** do **mercado**, batendo Java Servlet e Node.js com muita diferença de resultado, **10x mais rápido** que o node por exemplo.
+
+# Totalmente open-source
+
+- Todo **ecossistema .NET é **open-source**, o que faz da microsoft a **maior** empresa open-source do mundo.
+  Os projetos .NET são todos mantidos pela **.NET Foundation** uma organização sem **fins lucrativos.**
+
+  # como obter suporte tecnico
+
+- O .NET possui um enorme **ecossitema**, mais de **5 milhões** de programadores ao redor do mundo.
+  Além disso oferece mais de **90.000** pacotes de extensão **Nuget** para desenvolvermos nossas aplicações mais rapidamente.
+- A **comunidade técnica** .NET é uma das **maiores** e bem organizadas do mundo. Você encontrará facilmente tod **diversidade de conteúdos** produzidos em diversos idiomasmpor colaboradores, inclusive os **Microsoft MVP**
+- A plataforma .NET é **oficialmete** suportada pela **Microsoft** e é da **confiança** de milhares de empresas e milhões de desenvolvedores.
+A Microsoft leva a **segurança** muito a sério e lança atualizações **rapidamente** quando as **ameaças** são descobertas.
+- O ASP.NET é a **melhor** plataforma web da atualidade por diversos motivos, além da **performance**, **segurança** e **suporte** da comunidade. Você pode começar a desenvolver sua aplicação agora mesmo com **custo zero!**
+- Nenhuma outra tecnologia possui **ferramentas** tão elaboradas quanto o .NET
+- O **Visual Studio** faz toda a diferença no dia a dia, oferecendo total produtividade.
