@@ -88,3 +88,103 @@ A Microsoft leva a **segurança** muito a sério e lança atualizações **rapid
 - O ASP.NET é a **melhor** plataforma web da atualidade por diversos motivos, além da **performance**, **segurança** e **suporte** da comunidade. Você pode começar a desenvolver sua aplicação agora mesmo com **custo zero!**
 - Nenhuma outra tecnologia possui **ferramentas** tão elaboradas quanto o .NET
 - O **Visual Studio** faz toda a diferença no dia a dia, oferecendo total produtividade.
+
+# .NET CLI 
+- Comman Line Interface (CLI)
+Nome do modelo          Nome Curto                  Idioma      Tags
+----------------------  --------------------------  ----------  -------------------------------------------------------
+- API Web do ASP.NET ...  webapi                      [C#],F#     Web/WebAPI/Web API/API/Service
+- Aplicativo Autônomo...  blazorwasm                  [C#]        Web/Blazor/WebAssembly/PWA
+- Aplicativo Blazor S...  blazorserver                [C#]        Web/Blazor
+- Aplicativo Blazor S...  blazorserver-empty          [C#]        Web/Blazor/Empty
+- Aplicativo Blazor W...  blazorwasm-empty            [C#]        Web/Blazor/WebAssembly/PWA/Empty
+- Aplicativo do Console   console                     [C#],F#,VB  Common/Console
+- Aplicativo do Windo...  winforms                    [C#],VB     Common/WinForms
+- Aplicativo inicial ...  aspire-starter              [C#]        Common/.NET Aspire/Blazor/Web/Web API/API/Service/Cloud
+- Aplicativo vazio do...  aspire                      [C#]        Common/.NET Aspire/Cloud/Web/Web API/API/Service
+- Aplicativo Web ASP....  webapp,razor                [C#]        Web/MVC/Razor Pages
+- Aplicativo Web Blazor   blazor                      [C#]        Web/Blazor/WebAssembly
+- Aplicativo Web do A...  mvc                         [C#],F#     Web/MVC
+- Aplicativo WPF          wpf                         [C#],VB     Common/WPF
+- Arquivo de Buffer d...  proto                                   Web/gRPC
+- Arquivo de Configur...  webconfig                               Config
+- arquivo de dotnet g...  gitignore,.gitignore                    Config
+- Arquivo de manifest...  tool-manifest                           Config
+- Arquivo de Solução      sln,solution                            Solution
+- Arquivo EditorConfig    editorconfig,.editorconfig              Config
+- arquivo global.json     globaljson,global.json                  Config
+- Arquivo MSBuild Dir...  buildprops                              MSBuild/props
+- Arquivo MSBuild Dir...  buildtargets                            MSBuild/props
+- Arquivo MSBuild Dir...  packagesprops                           MSBuild/packages/props/CPM
+- ASP.NET Core API We...  webapiaot                   [C#]        Web/Web API/API/Service
+- ASP.NET Core com An...  angular                     [C#]        Web/MVC/SPA
+- ASP.NET Core com Re...  react                       [C#]        Web/MVC/SPA
+- ASP.NET Core Vazio      web                         [C#],F#     Web/Empty
+- Biblioteca de Classes   classlib                    [C#],F#,VB  Common/Library
+- Biblioteca de Class...  winformslib                 [C#],VB     Common/WinForms
+- Biblioteca de Class...  razorclasslib               [C#]        Web/Razor/Library
+- Biblioteca de Class...  wpflib                      [C#],VB     Common/WPF
+- Biblioteca de Contr...  wpfusercontrollib           [C#],VB     Common/WPF
+- Biblioteca de Contr...  winformscontrollib          [C#],VB     Common/WinForms
+- Biblioteca de Contr...  wpfcustomcontrollib         [C#],VB     Common/WPF
+- Classe de teste MSTest  mstest-class                [C#],F#,VB  Test/MSTest
+- Componente Razor        razorcomponent              [C#]        Web/ASP.NET
+- Configuração do NuGet   nugetconfig,nuget.config                Config
+- Controlador de API      apicontroller               [C#]        Web/ASP.NET
+- Controlador MVC         mvccontroller               [C#]        Web/ASP.NET
+-Exibição do Razor       view                        [C#]        Web/ASP.NET
+- Host de Aplicativos...  aspire-apphost              [C#]        Common/.NET Aspire/Cloud
+- Item de Teste NUnit 3   nunit-test                  [C#],F#,VB  Test/NUnit
+                                                    [C#],F#,VB  Test/NUnit
+- MVC ViewImports         viewimports                 [C#]        Web/ASP.NET
+- MVC ViewStart           viewstart                   [C#]        Web/ASP.NET
+- Padrões do serviço ...  aspire-servicedefaults      [C#]        Common/.NET Aspire/Cloud/Web/Web API/API/Service
+- Projeto de teste do...  aspire-xunit                [C#]        Common/.NET Aspire/Cloud/Web/Web API/API/Service/Test
+- Projeto de teste do...  aspire-mstest               [C#]        Common/.NET Aspire/Cloud/Web/Web API/API/Service/Test
+- Projeto de teste do...  aspire-nunit                [C#]        Common/.NET Aspire/Cloud/Web/Web API/API/Service/Test
+- Projeto de Teste MS...  mstest                      [C#],F#,VB  Test/MSTest/Desktop/Web
+- Projeto de Teste MS...  mstest-playwright           [C#]        Test/MSTest/Playwright/Desktop/Web
+- Projeto de Teste NU...  nunit                       [C#],F#,VB  Test/NUnit
+                                                    [C#],F#,VB  Test/NUnit/Desktop/Web
+- Projeto de Teste NU...  nunit-playwright            [C#]        Test/NUnit/Playwright/Desktop/Web
+- Projeto de Teste xUnit  xunit                       [C#],F#,VB  Test/xUnit/Desktop/Web
+- Página Razor            page                        [C#]        Web/ASP.NET
+- Serviço de Trabalho     worker                      [C#],F#     Common/Worker/Web
+- Serviço gRPC do ASP...  grpc
+
+# .NET Standard Library e outros TFMs
+
+- .NETFRAMEWORK  .NET CORE  XAMARIN 
+- My Standard Library 2.x
+- .NET Standard Library, Portable Class Library, .NET Framework Library
+
+# Tipos de Projetos ASP.NET
+- Razor(sites): MVC, Razor Pages, Razor Library, Blazor(SPA)
+- Services : WebApi, SignalR, gRPC
+- IDENTITY
+# O que é um Middleware?
+
+- Middlewares são **componentes** de software em uma aplicação APS.NET.
+- Estes componentes **manipulam** dados entre os **requests** e **responses**.
+- Um middleware possui uma **responsabilidade** definida e pode trabalhar **lado a lado** com outros middlewares.
+Quando falamos do **pipeline** do APS.NET estamos falando basicamente de Middlewares.
+- Request ______> Middlewaares________>Response
+
+# Como funciona um Middleware
+
+- Middleware 1
+
+// Lógica
+
+next();
+
+
+
+
+
+
+// Mais lógica
+
+- Quando chega um request o **pipeline** do ASP.NET é formado de **componentes** por exemplo:
+- MVC Middleware, Identity Middleware, loggin Middleware
+- Com tudo isso vão produzir o Response
