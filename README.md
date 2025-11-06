@@ -36,8 +36,11 @@ dispositivos móveis, desktop, jogos, loT e muito mais.
 
 # Como funciona o ASP.NET
 
+```csharp
 - request____> internet____> dados____> Aplicação ASP.NET
 - <________response: retorno de dados como arquivos, HTML, JSON
+
+```
 
  # História do ASP.NET
  
@@ -48,8 +51,10 @@ dispositivos móveis, desktop, jogos, loT e muito mais.
 
 # Vesões do ASP.NET 
 
+```csharp
 - Nov 2016> .NET Core 1.1 GA,  mai 2018> .NET Core 2.1 LTS,  dez 2019> .NET Core 3.1 LTS | Nov 2020> .NET 5.0 GA,
 Nov 2021> .NET6.0 LTS, Nov 2022> .NET 7.0 GA, Nov 2023> .NET 8.0 LTS, Nov 2024> .NET 9.0 GA, Nov 2025> .NET 10.0 LTS
+```
 
 - LTS - Long Term Support
 - GA - Genreal Avaliability
@@ -90,6 +95,9 @@ A Microsoft leva a **segurança** muito a sério e lança atualizações **rapid
 - O **Visual Studio** faz toda a diferença no dia a dia, oferecendo total produtividade.
 
 # .NET CLI 
+
+```
+
 - Comman Line Interface (CLI)
 Nome do modelo          Nome Curto                  Idioma      Tags
 ----------------------  --------------------------  ----------  -------------------------------------------------------
@@ -152,6 +160,8 @@ Nome do modelo          Nome Curto                  Idioma      Tags
 - Serviço de Trabalho     worker                      [C#],F#     Common/Worker/Web
 - Serviço gRPC do ASP...  grpc
 
+```
+
 # .NET Standard Library e outros TFMs
 
 - .NETFRAMEWORK  .NET CORE  XAMARIN 
@@ -171,20 +181,123 @@ Quando falamos do **pipeline** do APS.NET estamos falando basicamente de Middlew
 - Request ______> Middlewaares________>Response
 
 # Como funciona um Middleware
+```
+- Middleware 1         Middleware2           middleware 3
 
-- Middleware 1
+// Lógica             
 
-// Lógica
+next();             //Lógica
 
-next();
-
-
+                   next();                 //Lógica
 
 
+                                          // Mais lógica
+                   // Mais lógica
 
 
 // Mais lógica
 
+```
+
 - Quando chega um request o **pipeline** do ASP.NET é formado de **componentes** por exemplo:
 - MVC Middleware, Identity Middleware, loggin Middleware
 - Com tudo isso vão produzir o Response
+
+# ASP.NET Hosting
+
+- In-process hosting: significa que o iis que o ASP.NET vai rodar na memsa instância do iis(w3wp.exe)
+- Out-of-process hosting
+
+# Pipeline do ASP.NET
+
+```
+Request> ExceptionHandler> HSTS> HttpsRedirection> Static Files> Routing> CORS> Authentication> Authorization> Custom1> custom...> endpoint
+- segue todo o caminho de volta para voltar ao ExceptionHandler para dar o Response
+```
+
+# Configuração do ASP.NET
+**program.cs**
+- é a classe responsável por configurar todas responsabilidades e comportamentos da aplicação.
+
+```
+var builder + WebApplication.CreateBuilder(args);
+
+builder.Services.AddDtatabaseDeveloperPageExceptionFilter();
+
+var app = builder.build();
+
+if (!app.Environment.IsDevelopment())
+{ app.UseExceptionHandler("/Home/Error");
+app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthentication();
+app.UseAuthorization();
+
+app.MapControllerRoute(name: "default", pattern : "{controller=home}/{action=Index}/{id?}");
+app.MapRazorPages();
+
+app.Run();
+```
+
+**WebApplicationBuilder**
+- Classe que possui a responsabilidade de construir uma instância deaplicação ASP.NET com todas as configurações definidas
+
+```
+
+var builder = WebApplication.CreateBuilder(args);
+
+var cs = builder.configuration.GetConnectionString("DefaultConnection");
+
+builder.Services.AddDbContext<ApplicationContext>(options =>
+    options.UseSqlServer(cs));
+
+builder.Sevices.adddatabaseDeveloperPageExceptionFilter();
+
+builder.Services.AddDefaultIdentity<IdentityUser>(
+   options => option.SignIn.RequireConfirmedAccont = true)
+  .AddEntityFrameworksStores<ApplicationDbContext>();
+
+builder.Services.AddControllersWithViews(0;
+
+var app= builder.Build();
+```
+
+**WebApplication**
+- A instância que representa a aplicação e todas as configurações dos middlewares em relação aos seus comportarmento durante um request.
+
+``` var app = builder.Build();
+
+if (! app.Environment.IsDevelopment())
+{ !app.Enviroment.IsDevelopment())
+   app.UseExceptionHandler("/Home/Error");
+   app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthentication();
+app.Useauthorization();
+
+app.MapControllerRoute(name: "default", patter: "{controller=home}/{action=Index}/{id?}");
+app.MapRazorPages();
+
+app.Run();
+```
+
+
+# Recapitulando
+
+- Entendemos que o ASP.NET é um **poderoso** framework para desenvolvimento **Web**, entregando performance, segurança, praticidade e escalabilidade.
+- Com ASP.NET você será capaz de desenvolver aplicações front-end, SPA, back-end, APIs e serviços de integração e comunicação.
+- O modelo de **pipelines** é uma fantástica maneira de trabalhar a **configuração** da sua aplicação adicionando **apenas**
+aquilo que precisar na devida ordem de execução e **nada mais.**
+- O resultado de tudo isto é uma ótima experiência de desenvolvimento com uma incrível **produtividade**
